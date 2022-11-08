@@ -65,11 +65,11 @@ playBtn.addEventListener("click", function () {
         const resultEl = document.querySelector(".result");
         console.log(result);
         if (result % 2 === 0 && prediction.value === "pari" || result % 2 != 0 && prediction.value === "dispari") {
-            resultEl.innerHTML = `Il numero generato dal PC e' ${randomNumber}. Complimenti hai vinto !`
+            resultEl.innerHTML = `Il numero generato dal PC è ${randomNumber}. Complimenti hai vinto !`
             console.log("Hai Vinto!");
 
         } else {
-            resultEl.innerHTML = `Il numero generato dal PC e' ${randomNumber}. Hai perso !`
+            resultEl.innerHTML = `Il numero generato dal PC è ${randomNumber}. Hai perso !`
             console.log("Hai perso!");
         }
     } else {
