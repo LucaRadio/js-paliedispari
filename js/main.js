@@ -64,7 +64,7 @@ playBtn.addEventListener("click", function () {
         let result = sumNum(userNumber, randomNumber);
         const resultEl = document.querySelector(".result");
         console.log(result);
-        if (result % 2 === 0 && prediction.value === "pari" || result % 2 != 0 && prediction.value === "dispari") {
+        if (result % 2 === 0 && prediction === "Pari" || result % 2 != 0 && prediction === "Dispari") {
             resultEl.innerHTML = `Il numero generato dal PC è ${randomNumber}. Complimenti hai vinto !`
             console.log("Hai Vinto!");
 
@@ -75,9 +75,6 @@ playBtn.addEventListener("click", function () {
     } else {
         console.log("Codice non eseguito");
     }
-
-
-
 
 })
 
